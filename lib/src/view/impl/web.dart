@@ -443,7 +443,7 @@ class _WebViewXState extends State<WebViewX> {
         }
 
         if (model.sourceType == SourceType.url) {
-          iframe.contentWindow!.location.href = source;
+          iframe.contentWindow?.location.href = source;
         } else {
           _tryFetchRemoteSource(
             method: 'get',
